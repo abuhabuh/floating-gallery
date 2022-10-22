@@ -1,9 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit'
-import floatersReducer from '../features/floaters/floatersSlice'
+import imagesReducer from '../features/images/imagesSlice'
 
 export default configureStore({
   reducer: {
-    floaters: floatersReducer
+    images: imagesReducer
   }
 })
 
