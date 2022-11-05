@@ -1,0 +1,44 @@
+<link rel="stylesheet" href="index.css">
+<html>
+
+<body>
+
+  <div id="canvass">
+    <div id="div1">
+            <!--      <img src='https://images.unsplash.com/photo-1544568100-847a948585b9?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''> -->
+    </div>
+  </div>
+
+</body>
+
+<script>
+  const animatedElement = document.getElementById('div1');
+
+  animatedElement.addEventListener('animationend', (event) => {
+    debugger;
+    console.log('element: ' + event.target);
+    console.log('element id: ' + event.target.id);
+    console.log('event: ' + event.animationName);
+  });
+
+
+  /*
+
+    array of elements
+    add elements ever X seconds via interval function
+    after element finishes, delete element
+
+    once array is finished
+    - finish and fade out music?
+    - start the loop again
+
+    Component interface
+    - Load list of asset URLs
+    - Start, stop
+
+  */
+
+
+</script>
+
+</html>
