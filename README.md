@@ -6,9 +6,10 @@
 
 ## Todo
 
-- Iterate through image urls and display them as pictures
-  - imagesComponent.tsx
-- Implement CRUD functionality
+- Build initial plain slideshow with upload functionality and deploy to AWS
+- Need to think through how pictures will be added to the slideshow
+  - Should build mechanism to fetch any new pictures uploaded while slideshow is playing (infinite slideshow)
+
 
 ## References
 - https://github.com/reduxjs/redux-essentials-counter-example/blob/master/src/features/counter/counterSlice.js

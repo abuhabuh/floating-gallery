@@ -1,21 +1,57 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 
+import './imagesComponent.css'
 import { selectImageUrls } from './imagesSlice'
 
-export function ImagesComponent() {
+
+interface propsParameter {
+  compWidth: string,
+  compHeight: string,
+  compBgColor: string,
+}
+
+
+//  const animatedElement = document.getElementById('div1');
+//
+//  animatedElement.addEventListener('animationend', (event) => {
+//    debugger;
+//    console.log('element: ' + event.target);
+//    console.log('element id: ' + event.target.id);
+//    console.log('event: ' + event.animationName);
+//  });
+
+
+export function ImagesComponent(props:propsParameter) {
+
+  let imageContainerStyle = {
+    width: '50px',
+    height: '50px',
+  };
+  let imageStyle = {
+    maxWidth: '100%',
+    maxHeight: '100%',
+  };
 
   let imageUrls = useSelector(selectImageUrls);
   let imageComponents = imageUrls.map((imgUrl: string, idx: number) => {
     return (
-      <div key={idx}> {imgUrl} </div>
+      <div className="imageContainer" style={imageContainerStyle} key={idx}>
+        <img className="image" style={imageStyle} src={imgUrl} />
+      </div>
     );
   });
 
+  let mainComponentStyle = {
+    width: props.compWidth,
+    height: props.compHeight,
+    backgroundColor: props.compBgColor,
+  };
+
   return (
-    <div>
-      <h1> Images go here </h1>
+    <div className="floatingImagesComponent" style={mainComponentStyle} >
       {imageComponents}
     </div>
   );
+
 }
