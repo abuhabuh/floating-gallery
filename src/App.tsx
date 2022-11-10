@@ -13,8 +13,8 @@ function App() {
       <div className="App">
         <header className="App-header">
           <ImagesComponent
-            compWidth="500px"
-            compHeight="600px"
+            compWidth="800px"
+            compHeight="500px"
             compBgColor="lightBlue"
           />
         </header>

@@ -6,6 +6,12 @@
 
 ## Todo
 
+- Finish reading Redux overview
+  - https://redux.js.org/tutorials/essentials/part-1-overview-concepts
+- Build a simple working image adder and scroller first
+  - Then organize js files in an extensible structure: features directories
+    should not have components in them. Keep components separate so they can
+    use arbitrary store slices.
 - Build initial plain slideshow with upload functionality and deploy to AWS
 - Need to think through how pictures will be added to the slideshow
   - Should build mechanism to fetch any new pictures uploaded while slideshow is playing (infinite slideshow)
